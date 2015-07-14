@@ -82,6 +82,13 @@ In MongoDB 3.0 there is a new environment variable `STORAGE_ENGINE` to specific 
 
 By default is "wiredTiger".
 
+Run MongoDB in a replicatset
+------------------------------------------
+
+To run mongodb has a replicatset instance :
+        docker run -d -p 27017:27017 -p 28017:28017 -e REPLSET=rs0
+
+By default it runs as standalone        
 
 Change the default oplog size
 -----------------------------
