@@ -16,7 +16,7 @@ if [ "$OPLOG_SIZE" != "" ]; then
 fi
 
 if [ "$REPLSET" != "" ]; then
-    cmd="$cmd ----replSet $REPLSET"
+    cmd="$cmd --replSet $REPLSET"
 fi
 
 $cmd &
